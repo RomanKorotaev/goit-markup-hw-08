@@ -1,3 +1,12 @@
+header {
+  background: var(--white-color);
+  border-bottom: 1px solid var(--header-line);
+}
+
+.nav-list {
+  display: none;
+}
+
 /*
 header {
   background: var(--white-color);
