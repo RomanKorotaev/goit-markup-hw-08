@@ -2,7 +2,17 @@ footer {
   background: var(--dark-backgr);
   padding-top: 60px;
   padding-bottom: 60px;
+
+  & .social-list {
+    margin-bottom: 70px;
+  }
 }
+
+/*
+social-list__link--footer + social-list__link--footer {
+  margin-left: 10px;
+}
+*/
 
 .address {
   font-style: normal;
@@ -51,12 +61,13 @@ footer {
 }
 
 .mailing {
-  margin-left: 93px;
-
-  /* &--wrapper {
+  /*
+  &--wrapper {
     display: flex;
+    flex-wrap: wrap;
   }
 */
+
   &__input {
     width: 358px;
     height: 50px;
@@ -90,6 +101,10 @@ footer {
       padding: 15px 16px;
     }
   }
+}
+
+.base-btm--subscribe-btm {
+  margin-top: 20px;
 }
 
 /*

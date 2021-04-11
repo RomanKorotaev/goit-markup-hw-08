@@ -1019,6 +1019,15 @@ footer {
   padding-bottom: 60px;
 }
 
+footer .social-list {
+  margin-bottom: 70px;
+}
+
+/*
+social-list__link--footer + social-list__link--footer {
+  margin-left: 10px;
+}
+*/
 .address {
   font-style: normal;
   font-size: 14px;
@@ -1064,9 +1073,10 @@ footer {
 }
 
 .mailing {
-  margin-left: 93px;
-  /* &--wrapper {
+  /*
+  &--wrapper {
     display: flex;
+    flex-wrap: wrap;
   }
 */
 }
@@ -1098,6 +1108,10 @@ footer {
 .mailing__input:not(:placeholder-shown) {
   color: var(--white-color);
   padding: 15px 16px;
+}
+
+.base-btm--subscribe-btm {
+  margin-top: 20px;
 }
 
 /*
