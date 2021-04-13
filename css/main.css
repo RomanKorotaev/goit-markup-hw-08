@@ -642,14 +642,13 @@ header {
   max-width: 1600px;
   margin-right: auto;
   margin-left: auto;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-studio-bkg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-color: var(--hero-bkg-color);
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 198px;
 }
 
 .main-title {
@@ -662,6 +661,12 @@ header {
   width: 360px;
   margin: 0 auto;
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .main-title {
+    margin-bottom: 40px;
+  }
 }
 
 .backdrop {
@@ -682,6 +687,44 @@ header {
 
 .backdrop.is-hidden.modal {
   transform: translate(-50%, -50%) scale(0.1);
+}
+
+@media screen and (max-width: 767px) {
+  .hero-backgr {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero480@1x.jpg");
+  }
+}
+
+@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
+  .hero-backgr {
+    background-image: url("../images/hero/hero480@2x.jpg");
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero-backgr {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero768@1x.jpg");
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 2dppx) {
+  .hero-backgr {
+    background-image: url("../images/hero/hero768@2x.jpg");
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-backgr {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero1600@1x.jpg");
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero-backgr {
+    background-image: url("../images/hero/hero1600@2x.jpg");
+  }
 }
 
 @media screen and (min-width: 1200px) {
