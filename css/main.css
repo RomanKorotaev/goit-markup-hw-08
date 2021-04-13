@@ -738,8 +738,8 @@ header {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 528px;
-  height: 581px;
+  width: 490px;
+  height: 609px;
   padding: 40px;
   background: var(--white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -760,6 +760,13 @@ header {
   cursor: pointer;
 }
 
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
+}
+
 .close-btm-svg:hover {
   fill: var(--accent-color);
 }
@@ -771,35 +778,21 @@ header {
   fill: var(--header-color);
 }
 
-/*
-.modal-form__title {
-  display: block;
-  font-style: 700;
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 1.15px;
-  text-align: center;
-  letter-spacing: 0.03em;
-
-  padding-bottom: 30px;
-
-  color: var(--header-color);
-}
-*/
 .modal-form {
   display: flex;
   flex-direction: column;
+  margin-top: 30px;
 }
 
 .modal-form__title {
-  display: block;
   font-style: 700;
   font-weight: bold;
   font-size: 20px;
   line-height: 1.15px;
-  text-align: center;
   letter-spacing: 0.03em;
-  padding-bottom: 30px;
+  white-space: normal;
+  overflow-wrap: normal;
+  text-align: center;
   color: var(--header-color);
 }
 
@@ -870,11 +863,12 @@ header {
 
 .modal-form-check-desck {
   display: flex;
-  align-items: center;
   font-family: inherit;
   font-size: 14px;
   line-height: 1.7px;
   letter-spacing: 0.03em;
+  overflow-wrap: normal;
+  align-items: center;
   margin-bottom: 30px;
   color: var(--content-color);
 }
