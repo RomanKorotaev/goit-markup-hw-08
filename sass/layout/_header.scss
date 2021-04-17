@@ -122,7 +122,8 @@ header {
   // left: 0;
   left: 50%;
   width: 100vw;
-  height: 100vh;
+  //height: 100vh;
+
   padding-top: 48px;
   padding-bottom: 48px;
   padding-right: 40px;
@@ -130,8 +131,9 @@ header {
 
   background-color: var(--white-color);
   transform: translateY(-100%) translateX(-50%);
-
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  z-index: 50;
 
   &__nav-link {
     font-family: var(--main-font);
@@ -151,7 +153,7 @@ header {
     }
   }
 
-  &__nav-link--item {
+  &__nav-link--item:not(:last-child) {
     margin-bottom: 32px;
   }
 
@@ -216,17 +218,17 @@ header {
     &:focus {
       color: var(--btm-hover);
     }
-
-    &::after {
-      content: "";
-      margin-left: 10px;
-      border: 1px solid rgba(33, 33, 33, 0.2);
-      transform: rotate(90deg);
-    }
   }
 
   &__social-link--item:not(:last-child) {
-    margin-right: 20px;
+    margin-right: 10px;
+    padding-right: 10px;
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+    //background-color: tomato;
+  }
+
+  &--current {
+    color: var(--accent-color);
   }
 }
 
