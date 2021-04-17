@@ -941,6 +941,9 @@ header {
   .advantages-title {
     text-align: center;
   }
+  .advantages-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -964,10 +967,10 @@ header {
     flex-basis: calc(100% / 2 - 30px);
     margin-left: 30px;
   }
-}
-
-@media screen and (max-width: 1199px) {
-  .advantages-item:not(:last-child) {
+  .advantages-item:nth-child(1) {
+    margin-bottom: 30px;
+  }
+  .advantages-item:nth-child(2) {
     margin-bottom: 30px;
   }
 }
@@ -1078,6 +1081,15 @@ header {
   .team-item--wrapper {
     flex-basis: calc(100% / 2 - 30px);
     margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .team-item--wrapper:nth-child(1) {
+    margin-bottom: 30px;
+  }
+  .team-item--wrapper:nth-child(2) {
+    margin-bottom: 30px;
   }
 }
 
