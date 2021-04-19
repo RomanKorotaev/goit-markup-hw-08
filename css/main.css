@@ -81,7 +81,7 @@ body {
 
 @media screen and (min-width: 480px) {
   .container {
-    width: 480px;
+    width: 450px;
     margin: 0 auto;
   }
 }
@@ -752,7 +752,7 @@ header {
   .main-title {
     font-size: 44px;
     line-height: 1.36;
-    width: 696px;
+    max-width: 696px;
   }
 }
 
