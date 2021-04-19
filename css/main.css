@@ -284,7 +284,6 @@ header {
   background: var(--white-color);
   border-bottom: 1px solid var(--header-line);
   padding-top: 10px;
-  padding-bottom: 10px;
 }
 
 .header-contacts {
@@ -751,8 +750,9 @@ header {
 
 @media screen and (min-width: 1200px) {
   .main-title {
-    font-size: 26px;
+    font-size: 44px;
     line-height: 1.36;
+    width: 696px;
   }
 }
 
@@ -1241,18 +1241,8 @@ footer {
   background: var(--dark-backgr);
   padding-top: 60px;
   padding-bottom: 60px;
-  /* & .social-list {
-    margin-bottom: 70px;
-  }
-
-  */
 }
 
-/*
-social-list__link--footer + social-list__link--footer {
-  margin-left: 10px;
-}
-*/
 .address {
   font-style: normal;
   font-size: 14px;
@@ -1334,12 +1324,12 @@ social-list__link--footer + social-list__link--footer {
   padding: 15px 16px;
 }
 
-@media screen and (man-width: 767px) {
+@media screen and (max-width: 767px) {
   .address {
     margin-bottom: 60px;
   }
-  .footer .social-list {
-    margin-bottom: 70px;
+  .mailing {
+    margin-top: 60px;
   }
 }
 
