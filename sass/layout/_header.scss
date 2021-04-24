@@ -118,6 +118,10 @@ header {
 
 .mobile-menu {
   position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
   top: 0;
   // left: 0;
   left: 50%;
@@ -136,6 +140,7 @@ header {
   z-index: 50;
 
   &__nav-link {
+    display: inline-block;
     font-family: var(--main-font);
     font-style: normal;
     font-weight: 500;
@@ -158,8 +163,8 @@ header {
   }
 
   &__contacts {
-    margin-top: 302px;
-    margin-bottom: 64px;
+    // margin-top: 302px;
+    //margin-bottom: 64px;
   }
 
   &__close-btm {
@@ -185,16 +190,15 @@ header {
     }
   }
 
-  &__tel--item {
-    margin-bottom: 32px;
-  }
-
   &__email {
+    display: inline-block;
     font-size: 24px;
     line-height: 1.17px;
     letter-spacing: 0.02em;
 
     color: var(--content-color);
+
+    margin-top: 32px;
 
     &:hover,
     &:focus {

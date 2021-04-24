@@ -386,6 +386,9 @@ header {
 
 .mobile-menu {
   position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   top: 0;
   left: 50%;
   width: 100vw;
@@ -401,6 +404,7 @@ header {
 }
 
 .mobile-menu__nav-link {
+  display: inline-block;
   font-family: var(--main-font);
   font-style: normal;
   font-weight: 500;
@@ -417,11 +421,6 @@ header {
 
 .mobile-menu__nav-link--item:not(:last-child) {
   margin-bottom: 32px;
-}
-
-.mobile-menu__contacts {
-  margin-top: 302px;
-  margin-bottom: 64px;
 }
 
 .mobile-menu__close-btm {
@@ -445,15 +444,13 @@ header {
   color: var(--btm-hover);
 }
 
-.mobile-menu__tel--item {
-  margin-bottom: 32px;
-}
-
 .mobile-menu__email {
+  display: inline-block;
   font-size: 24px;
   line-height: 1.17px;
   letter-spacing: 0.02em;
   color: var(--content-color);
+  margin-top: 32px;
 }
 
 .mobile-menu__email:hover, .mobile-menu__email:focus {
@@ -761,10 +758,10 @@ header {
   position: absolute;
   top: 50%;
   left: 50%;
-  max-width: 490px;
-  height: auto;
-  min-height: 609px;
+  max-width: 450px;
+  max-height: 609px;
   width: 100%;
+  height: 100%;
   padding: 40px;
   background: var(--white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
