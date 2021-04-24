@@ -389,6 +389,7 @@ header {
   top: 0;
   left: 50%;
   width: 100vw;
+  height: 100vh;
   padding-top: 48px;
   padding-bottom: 48px;
   padding-right: 40px;
@@ -437,11 +438,11 @@ header {
   font-size: 34px;
   line-height: 1.18px;
   letter-spacing: 0.02em;
-  color: var(--content-color);
+  color: var(--accent-color);
 }
 
 .mobile-menu__tel:hover, .mobile-menu__tel:focus {
-  color: var(--accent-color);
+  color: var(--btm-hover);
 }
 
 .mobile-menu__tel--item {
@@ -1269,12 +1270,6 @@ footer {
   color: var(--accent-color);
 }
 
-/*
-.footer-content-item,
-.mailing {
-  text-align: center;
-}
-*/
 .join {
   display: block;
   font-weight: 700;
