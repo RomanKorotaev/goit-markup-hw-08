@@ -467,10 +467,13 @@ header {
 }
 
 .mobile-menu__social-link {
+  display: inline-block;
   font-weight: 500;
   font-size: 18px;
   line-height: 22px;
   letter-spacing: 0.02em;
+  padding-top: 5px;
+  padding-bottom: 5px;
   color: var(--accent-color);
 }
 
@@ -528,6 +531,12 @@ header {
   width: 100%;
   height: 5px;
   background-color: var(--accent-color);
+}
+
+@media screen and (max-width: 413px) {
+  .mobile-menu__social-link-list {
+    flex-wrap: wrap;
+  }
 }
 
 /*
