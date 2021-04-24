@@ -177,9 +177,10 @@ header {
   }
 
   &__tel {
+    display: inline-block;
     font-weight: 500;
     font-size: 34px;
-    line-height: 1.18px;
+    line-height: 1.18;
     letter-spacing: 0.02em;
 
     color: var(--accent-color);
@@ -187,6 +188,11 @@ header {
     &:hover,
     &:focus {
       color: var(--btm-hover);
+    }
+
+    &--item {
+      padding-top: 32px;
+      padding-bottom: 32px;
     }
   }
 
@@ -198,7 +204,7 @@ header {
 
     color: var(--content-color);
 
-    margin-top: 32px;
+    //margin-top: 32px;
 
     &:hover,
     &:focus {

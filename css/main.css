@@ -433,9 +433,10 @@ header {
 }
 
 .mobile-menu__tel {
+  display: inline-block;
   font-weight: 500;
   font-size: 34px;
-  line-height: 1.18px;
+  line-height: 1.18;
   letter-spacing: 0.02em;
   color: var(--accent-color);
 }
@@ -444,13 +445,17 @@ header {
   color: var(--btm-hover);
 }
 
+.mobile-menu__tel--item {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
 .mobile-menu__email {
   display: inline-block;
   font-size: 24px;
   line-height: 1.17px;
   letter-spacing: 0.02em;
   color: var(--content-color);
-  margin-top: 32px;
 }
 
 .mobile-menu__email:hover, .mobile-menu__email:focus {
